@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>LOBO PRO</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  width: 320px;
+  margin: 0;
+  padding: 24px;
+  font-family: Arial, sans-serif;
+  background: #111225;
+  color: white;
+  text-align: center;
+}
+.logo {
+  width: 85px;
+  height: 85px;
+  margin-bottom: 8px;
+}
+h1 {
+  color: #c4b5fd;
+  font-size: 25px;
+  margin: 8px;
+}
+p {
+  color: #a1a1b5;
+  font-size: 12px;
+}
+.estado {
+  background: #22243c;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 24px 0;
+}
+#status {
+  font-weight: bold;
+  color: #fb7185;
+}
+button {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:disabled {
+  opacity: .45;
+  cursor: default;
+}
+#conectar { background: #16a34a; }
+#desconectar { background: #dc2626; }
+.footer {
+  margin-top: 18px;
+  font-size: 11px;
+  color: #8989a3;
+}
+</style>
+</head>
+<body>
+<img class="logo" src="icon128.png" alt="LOBO">
+<h1>LOBO PRO</h1>
+<p>Panel de control</p>
+
+<div class="estado">
+  Estado: <span id="status">DESCONECTADO</span>
+</div>
+
+<button id="conectar">CONECTAR</button>
+<button id="desconectar">DESCONECTAR</button>
+
+<div class="footer">LOBO PRO | Version 1.0</div>
+<script src="popup.js"></script>
+<div style="margin:12px;text-align:center"><a href="cq-activar.html" target="_blank" style="color:white;background:#7445ee;padding:12px;border-radius:8px;display:inline-block;text-decoration:none">ACTIVAR LICENCIA / VER CLIENTE</a></div>
+</body>
+</html>
